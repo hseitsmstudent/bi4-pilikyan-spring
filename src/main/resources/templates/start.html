@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>Homepage</title>
+
+<body>
+<a>Hello, World!</a>
+<ul>
+    <li th:each="p:${data}">
+        <p th:text="${p.name}"></p>
+        <p th:text="${p.id}"></p>
+    </li>
+</ul>
+
+</body>
+</html>
